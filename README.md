@@ -1,4 +1,3 @@
-[readme.md](https://github.com/user-attachments/files/28861152/readme.md)
 # Does GLM-4.7-Flash (or its REAP-pruned variant) dethrone gpt-oss-20b? A \~$2 eval on a rented GPU
 
 **TL;DR:** No. gpt-oss-20b keeps the belt. The REAP-pruned GLM diverges *massively* from its parent at the token-distribution level (12× the divergence of Q4 quantization alone, different top token on \~31% of positions) — yet ties the full model on actual tasks. Doesn't matter: both GLM variants lost to gpt-oss-20b at equal-or-larger VRAM footprints. Total cost: about two dollars of Runpod time.
